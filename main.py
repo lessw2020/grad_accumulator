@@ -308,4 +308,3 @@ if __name__ == "__main__":
     use_cuda = DEVICE_TYPE == "cuda"
     print(f"use_cuda == {use_cuda}")
     mp.spawn(main, args=(world_size,), nprocs=world_size, join=True)
-    main()
